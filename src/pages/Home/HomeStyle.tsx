@@ -1,8 +1,9 @@
 import styled from "styled-components/native";
+import theme from "../../global/styles/theme";
 
 export const Container = styled.View `
     flex: 1;
-    background-color: #292B37;
+    background-color: ${theme.colors.background};
 `;
 
 export const ContainerHeader = styled.View `
@@ -12,7 +13,7 @@ export const ContainerHeader = styled.View `
 `;
 
 export const Header = styled.Text `
-    color: #fff;
+    color: ${theme.colors.title};
     font-size: 24px;
     
 `;

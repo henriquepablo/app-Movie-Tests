@@ -1,5 +1,4 @@
 import React from "react";
-import { Text, View } from "react-native";
 import { Container, ContainerHeader, Header } from "./HomeStyle";
 
 function Home():JSX.Element {
