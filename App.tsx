@@ -6,13 +6,16 @@
  */
 
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 import AppRoutes from './src/routes/AppRoutes';
 
 function App(): React.JSX.Element {
   
   return (
-      <AppRoutes />
+      <>
+        <StatusBar backgroundColor='#292B37'/>
+        <AppRoutes />
+      </>
   );
 }
 
