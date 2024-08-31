@@ -14,6 +14,7 @@ export const ContainerHeader = styled.View `
 
 export const Header = styled.Text `
     color: ${theme.colors.title};
-    font-size: 24px;
+    font-size: 28px;
+    font-family: ${theme.fonts.fontBody};
     
 `;
