@@ -5,5 +5,9 @@ export default {
     },
     fonts: {
         fontBody: 'Montserrat-Bold'
+    },
+    flatList: {
+        mr: 20,
+        mxh: 250
     }
 }

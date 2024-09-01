@@ -18,3 +18,8 @@ export const Header = styled.Text `
     font-family: ${theme.fonts.fontBody};
     
 `;
+
+export const FlatList = styled.FlatList`
+    margin-right: ${theme.flatList.mr}px;
+    max-height: ${theme.flatList.mxh}px;
+`;
