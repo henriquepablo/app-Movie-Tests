@@ -50,7 +50,8 @@ function AppRoutes():JSX.Element {
                     
                 }
         }>
-                <Stack.Screen name="HomeTabs" component={PageSelected}/>
+                <Stack.Screen name="HomeTabs" component={HomeTabs}/>
+                <Stack.Screen name="PageSelected" component={PageSelected}/>
             </Stack.Navigator>
        </NavigationContainer>
     );  

@@ -92,3 +92,10 @@ export const TextTrailer = styled.Text`
     font-weight: bold;
     font-size: 19px;
 `;
+
+export const Modal = styled.Modal``;
+
+export const ViewModal = styled.View`
+    background-color: #0F111D;
+    flex: 1;
+`;
