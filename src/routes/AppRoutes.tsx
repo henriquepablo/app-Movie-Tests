@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Home from "../pages/Home/Home";
 import { HomeIcon } from "lucide-react-native";
+import PageSelected from "../components/Page/PageSelected";
 
 
 const Stack = createNativeStackNavigator();
@@ -49,7 +50,7 @@ function AppRoutes():JSX.Element {
                     
                 }
         }>
-                <Stack.Screen name="HomeTabs" component={HomeTabs}/>
+                <Stack.Screen name="HomeTabs" component={PageSelected}/>
             </Stack.Navigator>
        </NavigationContainer>
     );  
