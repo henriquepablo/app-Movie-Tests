@@ -3246,6 +3246,7 @@ __metadata:
     "@types/react-test-renderer": ^18.0.0
     axios: ^1.7.6
     babel-jest: ^29.6.3
+    dotenv: ^16.4.5
     eslint: ^8.19.0
     jest: ^29.6.3
     lucide-react-native: ^0.437.0
@@ -4445,6 +4446,13 @@ __metadata:
     domelementtype: ^2.3.0
     domhandler: ^5.0.3
   checksum: e5757456ddd173caa411cfc02c2bb64133c65546d2c4081381a3bafc8a57411a41eed70494551aa58030be9e58574fcc489828bebd673863d39924fb4878f416
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.5":
+  version: 16.4.5
+  resolution: "dotenv@npm:16.4.5"
+  checksum: 301a12c3d44fd49888b74eb9ccf9f07a1f5df43f489e7fcb89647a2edcd84c42d6bc349dc8df099cd18f07c35c7b04685c1a4f3e6a6a9e6b30f8d48c15b7f49c
   languageName: node
   linkType: hard
 
