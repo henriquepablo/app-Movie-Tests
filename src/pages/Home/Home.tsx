@@ -4,12 +4,13 @@ import api from "../../service/api";
 
 import ListPopularMovies from "../../components/ListPopular/ListPopularMovies";
 import ListTopRatedFilms from "../../components/ListTopRatedFilms/ListTopRatedFilms";
-import { ScrollView } from "react-native";
+import { RefreshControl, ScrollView } from "react-native";
 
 function Home():JSX.Element {
-
+    
     const [listFilmesPopular, setListFilmesPopular] = useState([]);
     const [listFilmsRated, setListFilmsRated] = useState([]);
+    const [refreshing, setRefreshing] = useState(false);
 
     async function loadFilmsPopular() {
         const response = await api.get('discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc')
@@ -31,10 +32,17 @@ function Home():JSX.Element {
     useEffect(() => {
         loadFilmsPopular();
         loadFilmsRated();
-    }, [])
+    }, [refreshing])
+
+    const onRefresh = React.useCallback(() => {
+        setRefreshing(true);
+        setTimeout(() => {
+        setRefreshing(false);
+        }, 2000);
+    }, []);
     
     return(
-        <ScrollView >
+        <ScrollView refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}>
         <Container>
             <ContainerHeader>
                 <Header>
