@@ -4,8 +4,9 @@ import { createNativeStackNavigator} from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Home from "../pages/Home/Home";
-import { HomeIcon } from "lucide-react-native";
+import { HomeIcon, SearchIcon } from "lucide-react-native";
 import PageSelected from "../components/Page/PageSelected";
+import Search from "../pages/Search/Search";
 
 
 const Stack = createNativeStackNavigator();
@@ -33,6 +34,15 @@ function HomeTabs():JSX.Element {
                     }
                 }}
             />
+            
+            <Tab.Screen name="Seacrh" component={Search} 
+                options={{
+                    tabBarIcon: ({size, color}) => {
+                        return <SearchIcon size={size} color={color} />
+                    }
+                }}
+            />
+            
         </Tab.Navigator>
     );
 }
