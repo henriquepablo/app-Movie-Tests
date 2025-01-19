@@ -65,7 +65,7 @@
       "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/__mocks__/fileMock.js"
     },
     "transformIgnorePatterns": [
-    "node_modules/(?!(react-native-webview|@react-native|react-navigation|react-redux|redux|react-native)/)"
+      "node_modules/(?!(react-native-webview|@react-native|react-navigation|react-redux|redux|react-native)/)"
     ],
     "moduleFileExtensions": [
       "ts",

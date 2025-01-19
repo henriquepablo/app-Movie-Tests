@@ -20,6 +20,7 @@ function App(): React.JSX.Element {
         <Provider store={store}>
           <ThemeProvider theme={theme}>
             <StatusBar backgroundColor='#292B37'/>
+            <SafeAreaView style={{backgroundColor: '#292b37'}}/>
             <AppRoutes />
           </ThemeProvider>
         </Provider>
